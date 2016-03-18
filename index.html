@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+        <title>首页</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/weui.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="con">
+            <div id="focus" class="focus">
+                <div class="hd">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="#"><img src="upload/image/2015/12/30/1451467353127157.jpg" width='360px' height='168px' border='0'></a></li>
+                        <li><a href="#"><img src="upload/image/2015/12/30/1451467370492201.jpg" width='360px' height='168px' border='0'></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="container-fluid" style="margin-top: 0px;">
+                <ul class="row YP-row-nav text-center">
+                    <a href="#"><li class="col-sm-3 col-xs-3"><img src="upload/image/2016/02/04/1454578511591766.png"><p class="text-center">全部分类</p></li></a>
+                    <a href="#"><li class="col-sm-3 col-xs-3"><img src="upload/image/2016/02/04/1454578667564056.png"><p class="text-center">热门服务</p></li></a>
+                    <a href="#"><li class="col-sm-3 col-xs-3"><img src="upload/image/2016/02/04/1454578697423291.png"><p class="text-center">新增服务</p></li></a>
+                    <a href="#"><li class="col-sm-3 col-xs-3"><img src="upload/image/2016/02/04/1454578775571858.png"><p class="text-center">系统公告</p></li></a>
+                    <a href="javascript:showActionSheet('m_action_sheet');"><li class="col-sm-3 col-xs-3"><img src="upload/image/2016/02/04/1454578511591766.png"><p class="text-center">上拉菜单</p></li></a>
+                </ul>
+            </nav>
+
+            <section class="YPTab">
+                <ul class="nav nav-tabs text-center">
+                    <li class="col-xs-6 active"><a href="#one" role="tab" data-toggle="tab">我的收藏</a></li>
+                    <li class="col-xs-6"><a href="#two" role="tab" data-toggle="tab">我的评论</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="one">
+                        <p class="text-center">暂无数据－我的收藏</p>
+                    </div>
+                    <div class="tab-pane" id="two">
+                        <p class="text-center">暂无数据－我的评论</p>
+                    </div>
+                </div>
+            </section>
+
+            <script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+            <script type="text/javascript">
+            TouchSlide({
+                slideCell : "#focus",
+                titCell : ".hd ul",
+                mainCell : ".bd ul",
+                effect : "left",
+                autoPlay : true,
+                autoPage : true,
+                delayTime: 200,
+                interTime: 5000,
+                switchLoad : "_src"
+            });
+            </script>
+        </div>
+
+        <footer>
+            <nav class="YP-nav">
+                <ul class="YP-footer-ul text-center">
+                    <li><a href="#"><span><img src="upload/image/2016/02/04/1454574838803391.png"></span></a></li>
+                    <li><a href="#"><span><img src="upload/image/2016/02/04/1454575066378890.png"></span></a></li>
+                    <li><a href="tel:18891999285"><span><img src="upload/image/2016/02/04/1454575093616540.png"></span></a></li>
+                    <li><a href="user.html"><span><img src="upload/image/2016/02/04/1454575125459345.png"></span></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+    <script type="text/javascript" src="js/transport.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.json.js"></script>
+    <script type="text/javascript" src="js/swipeSlide.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/jquery.yiiactiveform.js"></script>
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+html {
+    fomt-famiily: '宋体';
+}
+
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #f7f7f7;
+    color: #555;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+a, a:link, a:active, a:hover, a:visited {
+    color: #555;
+    text-decoration: none;
+}
+
+a[type=button] {
+    color: #fff !important;
+}
+
+input[type=text], textarea {
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+    -webkit-appearance: none;
+}
+
+@media only screen and (max-width:310px) and (min-width:300px){body{font-size:10px}}
+@media only screen and (max-width:320px) and (min-width:310px){body{font-size:10px}}
+@media only screen and (max-width:360px) and (min-width:320px){body{font-size:12px}}
+@media only screen and (max-width:360px) and (min-width:350px){body{font-size:12px}}
+@media only screen and (max-width:480px) and (min-width:360px){body{font-size:14px}}
+@media only screen and (max-width:480px) and (min-width:470px){body{font-size:14px}}
+@media only screen and (max-width:560px) and (min-width:480px){body{font-size:16px}}
+@media only screen and (max-width:570px) and (min-width:560px){body{font-size:16px}}
+@media only screen and (max-width:640px) and (min-width:570px){body{font-size:18px}}
+@media only screen and (max-width:640px) and (min-width:630px){body{font-size:18px}}
+
+ul, li, dl, dt, dd, p, h1, h2, h3, h4, h5, form, img, div {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0 none;
+}
+
+.con {
+    background: #f7f7f7;
+    overflow: hidden;
+    /*margin-top: 40px;*/
+    margin-bottom: 62px;
+}
+
+.clearfix {
+    clear: both;
+    overflow: hidden;
+    height: auto;
+}
+
+/* 全局公共样式的设定 */
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/*顶部高度*/
+.YP-header {
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    max-width: 640px;
+    width: 100%;
+    background: #00a0e9;
+    height: 40px;
+    line-height: 40px;
+}
+
+.YP-header span {
+    font-size: 18px;
+    color: #FFF;
+}
+
+.YP-header i {
+    font-size: 40px;
+    color: #FFF;
+}
+
+.YP-header .pull-left {
+    padding-left: 15px;
+    padding-top: 6px;
+}
+
+.YP-header .pull-right {
+    padding-right: 15px;
+    padding-top: 6px;
+}
+
+/*banner效果*/
+.focus {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.focus .hd {
+    width: 100%;
+    height: 0.8em;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    bottom:0.5em;
+}
+
+.focus .hd ul {
+    display: inline-block;
+    height: 0.8em;
+}
+
+.focus .hd ul li {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    text-indent:-999em;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 0 0.3em;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.focus .hd ul .on {
+    background: #ea4b35;
+}
+
+.focus .bd {
+    position: relative;
+    z-index: 0;
+}
+
+.focus .bd li {
+    height: auto;
+    overflow: hidden;
+}
+
+.focus .bd li a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0; padding: 0;
+}
+
+.focus .bd li a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);/* 取消链接高亮 */
+}
+
+/*快速导航*/
+.YP-row-nav {
+    border-bottom:1px #e3e3e3 solid;
+    background:#FFF;
+    margin-top:0;
+}
+
+.YP-row-nav li {
+    border:1px #e3e3e3 solid;
+    padding:0.8em 0;
+    border-left:none;
+    border-bottom:none;
+}
+
+.YP-row-nav a:nth-child(4n) li {
+    border-right:none;
+}
+
+.YP-row-nav li i, .YP-row-nav li img {
+    font-size: 32px;
+    width:100%;
+    overflow:hidden;
+    display:block;
+}
+
+.YP-row-nav li p {
+    margin-top: 16px;
+}
+
+.YP-row-nav li img {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 公共颜色 */
+.color-red {
+    color: #F00;
+}
+
+.color-grey {
+    color: #A5A5A5;
+}
+
+/* 底部导航 */
+nav.YP-nav {
+    color: #999;
+    background: #fcfcfc;
+    height: 40px;
+    width: 100%;
+    max-width: 640px;
+    border-top: 1px solid #e3e3e3;
+    position: fixed;
+    bottom: 0;
+}
+
+nav.YP-nav ul li {
+    padding: 0.5px 0;
+    width: 25%;
+}
+
+nav.YP-nav ul li span {
+    display: block;
+    width: 1.9em;
+    margin: 0.1em auto;
+}
+
+.YP-footer-ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+}
+
+/* 用户中心 */
+.user-info {
+    overflow: hidden;
+    padding: 1em;
+    width: 100%;
+    background: url(../images/default.png);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.user-info .user-img i {
+    font-size: 4em;
+    padding: 0.1em;
+    background: #f1f1f1;
+    border-radius: 8px;
+    color: #aaa;
+}
+
+.user-info dl {
+    margin-left: 0.6em;
+    color: #fff;
+}
+
+.user-info dl dt h4 {
+    font-size: 1.5em;
+}
+
+/************************
+ * Tab切换
+ */
+.YPTab {
+    background:#FFF;
+    border-bottom:1px solid #e3e3e3;
+    margin-top: 0.6em;
+    margin-bottom: 0 !important;
+}
+
+.YPTab .nav {
+    background:#fff;
+    width:100%;
+    max-width:640px;
+    border-top:1px solid #e3e3e3;
+    height:3.15em;
+}
+
+.YPTab ul li {
+    border-right:1px solid #e3e3e3;
+    padding:0;
+}
+
+.YPTab ul li:last-child {
+    border-right:none;
+}
+.YPTab ul li>a:link, .YPTab li>a:hover {
+    border:none;
+    background:none;
+    padding:0.8em 0;
+}
+
+.YPTab ul li.active a, .YPTab li.active a:hover {
+    border:none;
+    border-radius:0;
+    background:none;
+}
+
+.YPTab ul li.active a:hover {
+    color:#666
+}
+
+.YPTab ul li.active a, .YPTab ul li.active a:link {
+    color:#ea4b35;
+}
+
+.YPTab .tab-content .tab-pane {
+    padding:0.6em;
+    border:none;
+}
+
+/****************************************************************/
+.active i {
+    color: #F82;
+}
+
+.btn-info {
+    border: none;
+    background: #00a0e9;
+    padding: 0.5em 0;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+.btn-info:hover {
+    background: #00a0e9;
+}
+
+.margin-tb {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.input-group {
+    margin: 10px 0px;
+}
+
+.nav-tabs-login>li {
+    width: 50%;
+}
+
+.page_title {
+    text-align: center;
+    font-size: 34px;
+    color: #DE7C23;
+    font-weight: 400;
+    margin: 0 15%
+}
+
+.page.slideIn {
+    -webkit-animation: a .2s forwards;
+    animation: a .2s forwards
+}
+
+.page.slideOut {
+    -webkit-animation: b .2s forwards;
+    animation: b .2s forwards
+}
